@@ -1,0 +1,10 @@
+{
+  "name": "Untungin",
+  "short_name": "Untungin",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "description": "Aplikasi edukasi peluang usaha dan produktivitas",
+  "icons": []
+}

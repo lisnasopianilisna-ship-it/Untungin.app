@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909"><title>Untungin</title>
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><span class="coin">U</span><div><b>UNTUNGIN</b><small>Mulai langkah kecil, raih peluang besar</small></div></div><span class="tag">OWNER</span></header>
+<main>
+<section class="hero"><p class="eyebrow">SELAMAT DATANG</p><h1>Temukan peluang<br><em>setiap hari.</em></h1><p>Belajar, temukan ide, dan bangun kebiasaan produktif bersama Untungin.</p><button class="gold" onclick="showPage('tips')">Jelajahi sekarang</button></section>
+<section class="stats"><div><strong id="dayCount">1</strong><small>Hari berkunjung</small></div><div><strong>0</strong><small>Saldo tersedia</small></div><div><strong>0</strong><small>Misi selesai</small></div></section>
+<section id="home" class="page active"><div class="section-title"><h2>Menu utama</h2><span>UNTUNGIN</span></div><div class="tiles">
+<button class="tile" onclick="showPage('tips')"><b>✦</b><strong>Tips Cuan</strong><small>Ide dan panduan</small></button>
+<button class="tile" onclick="showPage('misi')"><b>◎</b><strong>Misi Harian</strong><small>Bangun kebiasaan</small></button>
+<button class="tile" onclick="showPage('profil')"><b>◉</b><strong>Profil</strong><small>Informasi aplikasi</small></button>
+<button class="tile" onclick="showPage('tentang')"><b>◇</b><strong>Tentang</strong><small>Kenali Untungin</small></button>
+</div><div class="notice"><b>Catatan penting</b><p>Untungin saat ini adalah aplikasi informasi dan belum menyediakan pembayaran atau saldo yang bisa dicairkan.</p></div></section>
+<section id="tips" class="page"><div class="section-title"><h2>Tips Cuan</h2><span>EDUKASI</span></div>
+<article class="item"><small>PEMULA · 3 MENIT</small><h3>Mulai jual produk digital</h3><p>Buat template sederhana seperti daftar harga, undangan digital, atau planner. Mulai dari satu produk yang menyelesaikan masalah nyata.</p></article>
+<article class="item"><small>PEMASARAN · 4 MENIT</small><h3>Promosi tanpa spam</h3><p>Tunjukkan contoh hasil, jelaskan manfaatnya, dan tawarkan kepada orang yang memang membutuhkan. Hindari janji penghasilan instan.</p></article>
+<article class="item"><small>KEUANGAN · 2 MENIT</small><h3>Catat pemasukan dan biaya</h3><p>Pisahkan uang usaha dan pribadi. Catat setiap transaksi meski nilainya kecil.</p></article>
+</section>
+<section id="misi" class="page"><div class="section-title"><h2>Misi Harian</h2><span>LATIHAN</span></div><p class="muted">Checklist latihan pribadi. Ini bukan tugas berbayar.</p><label class="check"><input type="checkbox"> Cari satu masalah yang bisa dibantu dengan produk digital.</label><label class="check"><input type="checkbox"> Buat satu contoh produk sederhana.</label><label class="check"><input type="checkbox"> Minta masukan dari satu orang.</label></section>
+<section id="profil" class="page"><div class="section-title"><h2>Profil</h2><span>AKUN</span></div><div class="profile"><div class="avatar">U</div><h3>Pengguna Untungin</h3><p class="muted">Mode demo · Belum ada akun</p></div><div class="item"><h3>Status aplikasi</h3><p>Versi awal 1.0 · Data tersimpan lokal pada perangkat untuk beberapa fitur.</p></div></section>
+<section id="tentang" class="page"><div class="section-title"><h2>Tentang Untungin</h2></div><p>Untungin adalah aplikasi edukasi peluang usaha dan produktivitas. Informasi di dalam aplikasi bukan jaminan penghasilan.</p><p class="muted">Dibuat sebagai proyek awal. Dukungan iklan dan sistem akun belum diaktifkan.</p></section>
+</main>
+<nav><button class="nav active" data-page="home" onclick="showPage('home')">⌂<small>Beranda</small></button><button class="nav" data-page="tips" onclick="showPage('tips')">✦<small>Tips</small></button><button class="nav" data-page="misi" onclick="showPage('misi')">◎<small>Misi</small></button><button class="nav" data-page="profil" onclick="showPage('profil')">◉<small>Profil</small></button></nav>
+<script src="app.js"></script>
+</body></html>

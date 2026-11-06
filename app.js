@@ -1,0 +1,3 @@
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+const today=new Date().toDateString();const last=localStorage.getItem('untungin_visit');let count=Number(localStorage.getItem('untungin_days')||0);if(last!==today){count++;localStorage.setItem('untungin_days',count);localStorage.setItem('untungin_visit',today);}document.getElementById('dayCount').textContent=count;
